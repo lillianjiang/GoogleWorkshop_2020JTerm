@@ -3,6 +3,7 @@ package com.example.scarnesdice;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -129,6 +130,16 @@ public class MainActivity extends AppCompatActivity {
         }
         return rand;
     }
+
+
+    Handler myHandler = new Handler();
+    Runnable myRunnable = new Runnable() {
+        @Override
+        public void run() {
+            computerTurn();
+        }
+    };
+
 
     public void computerTurn(){
         roll.setEnabled(false);
