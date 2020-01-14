@@ -6,11 +6,9 @@ import android.content.res.AssetManager;
 import android.os.*;
 import android.widget.*;
 import android.view.*;
-import android.support.*;
 import java.util.*;
 import java.io.*;
 
-//This is Lillian Testing.
 public class MainActivity extends AppCompatActivity {
     private HashMap<String, ArrayList<String>> wordMap;
     private ArrayList<ArrayList<String>> pairs;
